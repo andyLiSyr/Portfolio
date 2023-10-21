@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>NYC Shootings Analysis - Andy Li</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>Andy Li</strong> Data Analyst</a>
+									<ul class="icons">
+										<li><a href="https://www.linkedin.com/in/andy-li-b02131196/" class="icon brands fa-linkedin"><span class="label">Twitter</span></a></li>
+										<li><a href="https://github.com/andyLiSyr" class="icon brands fa-github"><span class="label">Facebook</span></a></li>
+										
+									
+									</ul>
+								</header>
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>NYC Shootings Analysis</h1>
+									</header>
+
+									<span class="image main"><img src="images/nyc2.png" alt="" /></span>
+
+									<p>Shootings have become a growing problem in the United States. As a NYC resident, I wanted to know what the shootings situation was like in my city. I found a  dataset on NYC Open Data that has all the past reported shootings from 2005-2022, this was perfect for my goal.</p>
+									<p>Link to Dataset: <a href="https://data.cityofnewyork.us/Public-Safety/NYPD-Shooting-Incident-Data-Historic-/833y-fsy8">Click Here</a></p>
+									<hr class="major" />
+
+									<h2>Questions to Answer</h2>
+									<ol>
+										<li>How many total reported shootings in NYC from 2017-2022?</li>
+										<ul>
+											<li>1.1 How many shootings in each borough?</li>
+										</ul>
+										<li>How many total shootings each year from 2017-2022</li>
+										<ul>
+											<li>2.1 How many in each borough each year?</li>
+										</ul>
+										<li>Is there a monthly pattern in shootings?</li>
+										<li>What is the deadliest shooting incident from 2017-2022?</li>
+										<li>What is the distribution of shootings by each hour in 2022?</li>
+										<li>What is the distribution of shootings by victim and perpetrator demographics in 2022?</li>
+										<li>What are the top 5 precincts with the most shootings in 2022?</li>
+									</ol>
+
+									<hr class="major" />
+
+									<h2>Approach</h2>
+
+									<h4>Data Cleaning/Transformatioin</h4>
+									<ul>
+										<li>Loaded the dataset into a Pandas Dataframe in a Jupyter Notebook for data cleaning</li>
+										<li>Checked for outlier values and nulls, all outlier values were replaced and null values were filled in</li>
+										<li>Removed unnecessary columns and filtered out rows of data that were not needed for my analysis</li>
+										<li>Changed the structure of the original dataset by splitting it into two separate csv files that can be joined together</li>
+										<li>Transformed the data by storing the CSV files in tables in a SQLite3 database</li>
+								    </ul>
+									<br>
+									<p>Link to Data Cleaning: <a href="https://github.com/andyLiSyr/nycShootingsAnalysis/blob/main/Data/clean_nyc_shootings.ipynb">Click Here</a></p>
+
+									<h4>Analysis</h4>
+									<ul>
+										<li>Peformed analysis using combination of SQL queries and Pandas dataframes</li>
+										<li>Visualized queries using libraries like Matplotlib and Seaborn</li>
+									</ul>
+									<br>
+									<p>Link to Analysis: <a href="https://github.com/andyLiSyr/nycShootingsAnalysis/blob/main/Analysis/NYC_Shootings_Analysis.ipynb">Click Here</a></p>
+					
+
+									<hr class="major" />
+									<p>You can click below if you want to see the entire project repo on Github</p>
+									<ul class="actions">
+										<li><a href="https://github.com/andyLiSyr/nycShootingsAnalysis" class="button">View Github Repo</a></li>
+									</ul>
+
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+						
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">Homepage</a></li>
+										<li><a href="https://drive.google.com/file/d/1BOaAKEYxCLPLppES9VhOvixzd_XXTicg/view?usp=sharing">Resume</a></li>
+										<li>
+											<span class="opener">Portfolio</span>
+											<ul>
+												<li><a href="salesDashboard.html">Mall Sales Dashboard</a></li>
+												<li><a href="nyc_tableau.html">NYC Shootings Dashboard</a></li>
+												<li><a href="nyc_sql_analysis.html">NYC Shootings Analysis</a></li>
+												<li><a href="spotify_analysis.html">Spotify Top Hits Analysis</a></li>
+											</ul>
+										</li>
+										
+									</ul>
+								</nav>
+
+							
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Contact Me</h2>
+									</header>
+									<p>I'm open to connecting and discussing potential opportunities to work in the data analyst field. Please don't hesitate to get in touch!</p>
+									<ul class="contact">
+										<li class="icon solid fa-envelope"><a href="mailto:andyli42262@gmail.com">andyli42262@gmail.com</a></li>
+										<li class="icon solid fa-phone">(607) 821-8766</li>
+										
+									</ul>
+								</section>
+
+							<!-- Footer -->
+								<footer id="footer">
+									<header class="major">
+										<h2>Follow My Socials</h2>
+									</header>
+									<p>Click on social media icons below if you want to network.</p>
+									<ul class="icons">
+										<li><a href="https://www.linkedin.com/in/andy-li-b02131196/" class="icon brands fa-linkedin"><span class="label">Twitter</span></a></li>
+										<li><a href="https://github.com/andyLiSyr" class="icon brands fa-github"><span class="label">Facebook</span></a></li>
+										
+									
+									</ul>
+									<br>
+									<p class="copyright">&copy; Andy Li. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+								</footer>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

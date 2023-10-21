@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>NYC Tableau Dashboard - Andy Li</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>Andy Li</strong> Data Analyst</a>
+									<ul class="icons">
+										<li><a href="https://www.linkedin.com/in/andy-li-b02131196/" class="icon brands fa-linkedin"><span class="label">Twitter</span></a></li>
+										<li><a href="https://github.com/andyLiSyr" class="icon brands fa-github"><span class="label">Facebook</span></a></li>
+										
+									
+									</ul>
+								</header>
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>NYC Shootings Tableau Dashboard</h1>
+									</header>
+
+									<span class="image main"><img src="images/tableauDashboard3.png" alt="" /></span>
+									<p>As a NYC resident, I wanted to create a dashboard regarding NYC data. I found a dataset regarding NYC shootings on  NYC Open Data that I thought would make a good Tableau dashboard project.</p>
+                                    <p>Link to NYC Dataset: <a href="https://data.cityofnewyork.us/Public-Safety/NYPD-Shooting-Incident-Data-Historic-/833y-fsy8">Click Here</a></p>
+									
+
+									<hr class="major" />
+
+									<h2>Approach</h2>
+
+									<h4>Data Cleaning</h4>
+									<ul>
+										<li>Loaded the dataset into a Pandas Dataframe in a Jupyter Notebook for data cleaning</li>
+										<li>Checked for outlier values and nulls in each column, all outlier values were replaced and null values were filled in</li>
+										<li>Filtered out unnecessary columns and rows of data that were not needed in my dashboard</li>
+										<li>Changed the structure of the original dataset by splitting it into two separate CSV files that can be joined together</li>
+									</ul>
+									<br>
+									<p>Link to Data Cleaning: <a href="https://github.com/andyLiSyr/nycDataCleaning/blob/main/clean_ny_tableau.ipynb">Click Here</a></p>
+									<h4>Dashboard Creation</h4>
+									<ul>
+										<li>Connected the two clean CSV files and a shapefile of the nyc boroughs to tableau</li>
+										<li>Created a tableau data model on the 3 data sources by using features like relationships and inner joins</li>
+										<li>Created 3 dashboards by combining multiple visuals from multiple sheets, each sheet contains one visualization, visualizations include bar graphs, maps, pie charts and tree maps</li>
+										<li>Implemented dynmaic filtering for the dashboards using action filters</li>
+										<li>Made navigation buttons to switch between dashboards</li>
+										<li>Used Tableau's story feature to create a presentation of insights on each dashboard</li>
+									</ul>
+									<br>
+									<p>Link to Project in Tableau: <a href="https://public.tableau.com/app/profile/andy.li5977/viz/NYC_ShootingsDashboard/HomeDashboard?publish=yes">Click Here</a></p>
+
+									<hr class="major" />
+
+									
+
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+						
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">Homepage</a></li>
+										<li><a href="https://drive.google.com/file/d/1BOaAKEYxCLPLppES9VhOvixzd_XXTicg/view?usp=sharing">Resume</a></li>
+										<li>
+											<span class="opener">Portfolio</span>
+											<ul>
+												<li><a href="salesDashboard.html">Mall Sales Dashboard</a></li>
+												<li><a href="nyc_tableau.html">NYC Shootings Dashboard</a></li>
+												<li><a href="nyc_sql_analysis.html">NYC Shootings Analysis</a></li>
+												<li><a href="spotify_analysis.html">Spotify Top Hits Analysis</a></li>
+											</ul>
+										</li>
+										
+									</ul>
+								</nav>
+
+							
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Contact Me</h2>
+									</header>
+									<p>I'm open to connecting and discussing potential opportunities to work in the data analyst field. Please don't hesitate to get in touch!</p>
+									<ul class="contact">
+										<li class="icon solid fa-envelope"><a href="mailto:andyli42262@gmail.com">andyli42262@gmail.com</a></li>
+										<li class="icon solid fa-phone">(607) 821-8766</li>
+										
+									</ul>
+								</section>
+
+							<!-- Footer -->
+								<footer id="footer">
+									<header class="major">
+										<h2>Follow My Socials</h2>
+									</header>
+									<p>Click on social media icons below if you want to network.</p>
+									<ul class="icons">
+										<li><a href="https://www.linkedin.com/in/andy-li-b02131196/" class="icon brands fa-linkedin"><span class="label">Twitter</span></a></li>
+										<li><a href="https://github.com/andyLiSyr" class="icon brands fa-github"><span class="label">Facebook</span></a></li>
+										
+									
+									</ul>
+									<br>
+									<p class="copyright">&copy; Andy Li. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+								</footer>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
